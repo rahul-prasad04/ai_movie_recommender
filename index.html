@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>AI Movie Recommender</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Comic+Neue&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <script src="https://kit.fontawesome.com/4a3b1f73a2.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <header>
+        <div class="header-content">
+            <h1>🎬 AI Movie Recommender</h1>
+            <button onclick="toggleTheme()">🌗</button>
+        </div>
+    </header>
+
+
+    <div class="container">
+
+        <select id="genre">
+            <option value="action">Action</option>
+            <option value="comedy">Comedy</option>
+            <option value="horror">Horror</option>
+            <option value="romance">Romance</option>
+            <option value="thriller">Thriller</option>
+            <option value="sci-fi">Sci-Fi</option>
+            <option value="drama">Drama</option>
+            <option value="animation">Animation</option>
+        </select>
+
+        <input type="text" id="search" placeholder="Search keyword...">
+
+        <button onclick="recommend()">🎯 Recommend</button>
+
+        <div id="loader" class="loader hidden"></div>
+        <div id="results" class="results"></div>
+
+    </div>
+
+
+    <div id="aboutModal" class="modal hidden">
+        <div class="modal-content">
+            <h2>About</h2>
+            <p>
+                This AI Movie Recommender uses real-time API data to suggest movies.
+                It demonstrates how modern web apps simulate intelligent systems using APIs.
+            </p>
+            <button onclick="closeAbout()">Close</button>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="socials">
+            <a href="#" onclick="openAbout()"><i class="fas fa-info"></i></a>
+            <a href="https://github.com/rahul-prasad04" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/rahul-prasad04/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.facebook.com/rahul04prasad" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://x.com/Rahul_prasad04" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
